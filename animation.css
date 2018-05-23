@@ -1,0 +1,64 @@
+
+#container {
+  width: 500px;
+  height: 800px;
+  position: relative;
+  background: ;
+  border-style: solid;
+  border: thick double #32a1ce;
+
+}
+#stage {
+    top: 500px;
+    left:400px;
+  width: 490px;
+  height: 300px;
+  border-style: solid;
+  background: black;
+
+}
+@keyframes example {
+    0%   {left:0px; top:0px;}
+    25%  {left:400px; top:0px;}
+    50%  {left:400px; top:400px;}
+    60%  {left:400px; top:0px;}
+    75%  {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+}
+@keyframes example2 {
+    0%   {left:0px; top:400px;}
+    25%  {transform: rotate(0.5turn);}
+    50%  {left:200px; top:400px;}
+    60%  {left:400px; top:400px;}
+    75%  {transform: rotate(0.5turn);}
+    100% {left:200px; top:400px;}
+}
+@keyframes example3 {
+    0%   {left:300px; top:600px;}
+    25%  {left:400px; top:600px;}
+    50%  {left:200px; top:600px; transform: rotate(0.5turn);}
+    60%  {left:100px; top:600px;}
+    75%  {left:200px; top:600px; transform: rotate(0.5turn);}
+    100% {left:400px; top:600px; transform: rotate(0.5turn);}
+}
+
+#animation1 {
+    animation-name: example;
+    animation-duration: 20s;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#animation2{
+    animation-name: example2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#animation3{
+    animation-name: example3;
+    animation-duration: 20s;
+   position: absolute;
+}
